@@ -1,0 +1,169 @@
+
+body {
+  background: #f2f2f6;
+}
+
+.main {
+  background: #ffffff;
+  margin: 32px;
+  min-height: 100vh;;
+}
+
+.bg-grey {
+  background: #f2f2f6;
+}
+
+.has-search .form-control {
+  padding: 6px;
+  background: #f2f2f6;
+  padding-left: 64px;
+  color: #283C61;
+  font-size: 22px;
+  height: 64px;
+  border-radius: 10px !important;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 4;
+  display: block;
+  width: 64px;
+  height: 64px;
+  font-size: 32px;
+  line-height: 64px;
+  text-align: center;
+  pointer-events: none;
+  color: #283C61;
+}
+
+.btn-primary {
+  background: #283C61;
+  padding: 8px 16px;
+}
+
+.btn-primary:hover {
+  background: #283C61;
+}
+
+.btn-primary:active {
+  background: #283C61;
+}
+
+.search-button {
+  padding: 19px 26px;
+  border-radius: 10px;
+}
+
+
+.movies-list .container {
+  padding: 50px 0px;
+}
+
+.movie-image{
+  height: calc(100% + 50px);
+  position: absolute;
+  margin: -16px 16px auto 16px;
+}
+
+.movie-details {
+  padding: 24px;
+}
+.movie-details h2 {
+  color: #283C61;
+  margin-bottom: 24px;;
+}
+
+.movie-content {
+  height: 75px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.episode-content {
+  padding: 45px;
+}
+
+.episode-content .show-image {
+  width: 100%;
+}
+
+.episodes-list {
+  width: 350px;
+  padding: 0px 20px;
+}
+
+.select-season {
+  background: #f2f2f6;
+  padding: 8px 20px;
+  color: #283C61;
+  height: 64px;
+  font-weight: 500;
+  font-size: 22px;
+  border-radius: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+select + i.fa {
+  float: right;
+  margin-top: -42px;
+  margin-right: 16px;
+  /* this is so when you click on the chevron, your click actually goes on the dropdown menu */
+  pointer-events: none;
+  /* everything after this is just to cover up the original arrow */
+  /* (for browsers that don't support the syntax used above) */
+  background-color: transparent;
+  color:black!important;
+  padding-right: 5px;
+}
+.episode-overview {
+  display: flex;
+  padding: 20px 0;
+}
+
+.episode-number {
+  display: flex;
+  width: 75px;
+  height: 75px;
+  background: #283C61;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.episode-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 16px;
+  flex: 1;
+}
+
+.episode-details h5 {
+  color: #283C61;
+}
+
+.episode-extra {
+  color: #AEAEAE;
+}
+
+.episode-extra .fa-star {
+  color: #283C61;
+}
+
+.nav-bar {
+  background-color: #283C61;
+  padding: 20px 32px;
+  
+}
+.nav-bar h5 {
+    color: #ffffff;
+    margin: 0;
+}
+.show-name {
+  color: #283C61;
+  margin:5px;
+}
+.show-summary {
+  color: #AEAEAE;
+}
