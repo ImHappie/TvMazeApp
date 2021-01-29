@@ -1,0 +1,11 @@
+<div class="nav">
+    <h1>Workforce</h1>
+    <div class="nav-btn">
+        <button mat-raised-button color="primary" [disabled]="action === 'list'" (click)="manageEmployee.emit({action:'list'})">
+            Employees
+        </button>
+        <button mat-raised-button color="warn" [disabled]="action === 'create'" (click)="manageEmployee.emit({action:'create'})">
+            Add Employee
+        </button>
+    </div>
+</div>

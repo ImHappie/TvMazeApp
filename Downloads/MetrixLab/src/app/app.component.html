@@ -1,0 +1,6 @@
+<div>
+<app-header [action]="action"></app-header>
+<app-nav [action]="action" (manageEmployee)="manageEmployee($event)"></app-nav>
+<app-employees [employeeInfo]="employee" (manageEmployee)="manageEmployee($event)" [action]="action"></app-employees>
+<router-outlet></router-outlet>
+</div>

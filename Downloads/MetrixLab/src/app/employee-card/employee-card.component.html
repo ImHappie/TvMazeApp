@@ -1,0 +1,10 @@
+<div class="employee-card">
+    <mat-card class="employee-info-card" (click)="getEmployee.emit(employee)">
+        <img mat-card-image src={{employee.avatar}} alt={{employee.first_name}}>
+        <mat-card-content>
+            <p>
+                {{employee.first_name}} {{employee.last_name}}
+            </p>
+        </mat-card-content>
+    </mat-card>
+</div>

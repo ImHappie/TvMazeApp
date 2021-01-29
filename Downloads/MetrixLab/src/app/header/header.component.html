@@ -1,0 +1,20 @@
+<div class="header">
+    <ng-container [ngSwitch]="action">
+        <div *ngSwitchCase="'list'">
+            <h1>Employee Page</h1>
+        </div>
+        <div *ngSwitchCase="'info'">
+            <h1>Employee Details</h1>
+        </div>
+        <div *ngSwitchCase="'create'">
+            <h1>Add Employee Page</h1>
+        </div>
+    </ng-container>
+    <div class="logo">
+    <div class="info">
+    <h1>METRIXLAB</h1>
+    <p>A Macromill Group Company</p> 
+    </div>
+    <mat-icon class="zoom-icon" >zoom_out_map</mat-icon> 
+    </div>
+</div>

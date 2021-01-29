@@ -1,0 +1,34 @@
+<div class="employee-invitation" [formGroup]="employeeForm">
+    <div class="employee-invite">
+        <div class="employee-upload-avatar">
+            <mat-card >
+                <img mat-card-image [src]="edit ? employee.avatar : avatarImg" [alt]="edit ? employee.first_name : avatarImg">
+                <mat-card-content *ngIf="edit">
+                    <p>
+                        {{employee.first_name}} {{employee.last_name}}
+                    </p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div class="employee-form-group">
+            <div class="employee-form">
+                <div class="employee-form-label">
+                    <p>First Name</p>
+                    <p>Last Name</p>
+                    <p>Email Address</p>
+                    <p>Upload Photo</p>
+                </div>
+                <div class="employee-form-field">
+                    <input type=”text” placeholder="Enter First Name"  formControlName="firstName" required />
+                    <input type=”text” placeholder="Enter Last Name"  formControlName="lastName" required/>
+                    <input type=”text” placeholder="Enter Email"  formControlName="email" required/>
+                    <input type="file" placeholder="Upload Image"  formControlName="avatarImg" (change)="getAvatar($event)" required />
+                </div>
+            </div>
+            <button mat-raised-button color="primary" (click)="getEmployeeInfo()">
+                {{edit ? "Update" : "Add"}} Employee
+            </button>
+        </div>
+    </div>
+    
+</div>

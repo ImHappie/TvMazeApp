@@ -1,0 +1,26 @@
+<div class="employee-dashboard">
+    <ng-container [ngSwitch]="action" >
+        <div *ngIf="employees?.length">
+            <div *ngSwitchCase="'list'">
+                <h2>Total of {{employees?.length}} employees</h2>
+                <div class="employee-list">
+                    <ng-container *ngFor="let employee of employees">
+                        <app-employee-card (getEmployee)="getEmployee($event)" [employee]="employee"></app-employee-card>
+                    </ng-container>
+                </div>
+                <div>
+                    <mat-paginator [length]=employees?.length
+                    [pageSize]="employees?.length"
+                    >
+                    </mat-paginator>
+                </div>  
+            </div>
+        </div>          
+        <div class="employee-info" *ngSwitchCase="'info'">
+            <app-employee-info  (manageEmployee)="manageEmployee.emit($event)" (remove)="removeEmployee($event)" [employees]="employees" [employee]="employee"></app-employee-info>
+        </div>
+        <div class="employee-info" *ngSwitchCase="'create'">
+            <app-employee-invite (manageEmployee)="manageEmployee.emit($event)" [employees]="employees"></app-employee-invite>
+        </div>
+    </ng-container>
+</div>

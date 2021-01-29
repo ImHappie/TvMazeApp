@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    color: darkblue;
+}
+
+.logo {
+    display: inherit;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 12%;
+}
+
+.info{
+    line-height: 0px;
+    font-size: 10px;
+}
+
+.zoom-icon {
+    margin-top: 4px;
+}

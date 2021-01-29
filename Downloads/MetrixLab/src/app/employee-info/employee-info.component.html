@@ -1,0 +1,38 @@
+<div class="employee-info" *ngIf="!edit">
+        <div class="employee-info-card">
+            <mat-card>
+                <img mat-card-image src={{employee.avatar}} alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                    <p>
+                        {{employee.first_name}} {{employee.last_name}}
+                    </p>
+                </mat-card-content>
+            </mat-card>
+            <div class="employee-info-action">
+                <button mat-raised-button color="primary" (click)="updateEmployee()">
+                    Update
+                </button>
+                <button mat-raised-button color="warn" (click)="remove.emit(employee.id)">
+                    Remove
+                </button>
+            </div>
+        </div>
+        <div class="employee-detail">
+            <div>
+                <p>Employee ID</p>
+                <p>First Name</p>
+                <p>Last Name</p>
+                <p>Email Address</p>
+            </div>
+            <div class="employee-data">
+                <p>{{employee.id}}</p>
+                <p>{{employee.first_name}}</p>
+                <p>{{employee.last_name}}</p>
+                <p>{{employee.email}}</p>
+            </div>
+        </div>
+    
+</div>
+<div *ngIf="edit">
+        <app-employee-invite  (manageEmployee)="manageEmployee.emit($event)" [employees]="employees" [employee]="employee" [edit]="edit"></app-employee-invite>
+</div>

@@ -1,0 +1,16 @@
+.nav {
+    margin:10px 10px 0px 10px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-bottom: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.nav-btn {
+    display: inherit;
+    justify-content: space-evenly;
+    width: 30%;
+
+}

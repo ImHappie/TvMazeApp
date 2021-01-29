@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.mat-raised-button.mat-primary{
+    background-color: darkblue;
+}
+.mat-raised-button.mat-warn{
+    background-color: orange;
+}
+.mat-card-content {
+    text-align: center;
+}
+
+.mat-raised-button.mat-button-disabled:not([class*=mat-elevation-z]){
+    background-color: lightskyblue;
+    color: gray;
+}

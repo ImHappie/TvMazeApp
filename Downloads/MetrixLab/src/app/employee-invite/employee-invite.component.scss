@@ -1,0 +1,30 @@
+.employee-invitation {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    .employee-invite{
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+        .employee-upload-avatar{
+            width: 400px;
+            margin: 10px;
+        }
+        .employee-form-group{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .employee-form {
+                display: flex;
+                justify-content: space-evenly;
+                .employee-form-field {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+                }
+            }
+            
+        }
+    }
+}
